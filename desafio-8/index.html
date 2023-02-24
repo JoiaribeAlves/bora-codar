@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <title>Bora Codar - Desafio 8</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <script
+      src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"
+      type="text/javascript"
+    ></script>
+  </head>
+  <body>
+    <main class="main">
+      <a
+        href="https://www.rocketseat.com.br/boracodar"
+        target="_blank"
+        class="title"
+        >#boraCodar</a
+      >
+
+      <div class="cards">
+        <div class="card card-nps">
+          <p class="card-header">NPS geral</p>
+
+          <div class="card-content">
+            <img
+              src="src/images/score-icon.svg"
+              alt="Ícone da pontuação do NPS"
+            />
+            <p>Excelente!</p>
+          </div>
+
+          <div class="card-footer">
+            <p>NPS Score <span>75</span></p>
+          </div>
+        </div>
+
+        <div class="card card-sales">
+          <p class="card-header">Vendas fechadas</p>
+
+          <div class="card-content">
+            <img src="src/images/chart-1.png" alt="Gráfico de vendas mensal" />
+          </div>
+
+          <div class="card-footer">
+            <div>
+              <img src="src/images/ellipse-1.svg" alt="Ellipse" />
+              Esperado <span>100</span>
+            </div>
+
+            <div>
+              <img src="src/images/ellipse-2.svg" alt="Ellipse" />
+              Alcançado <span>70</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-meta">
+          <p class="card-header">Meta mensal</p>
+
+          <div class="card-content">
+            <img src="src/images/chart-2.png" alt="Gráfico da meta mensal" />
+          </div>
+
+          <div class="card-footer">
+            <div>
+              <img src="src/images/ellipse-1.svg" alt="Ellipse" />
+              Esperado <span>R$ 70K</span>
+            </div>
+
+            <div>
+              <img src="src/images/ellipse-3.svg" alt="Ellipse" />
+              Alcançado <span>R$ 63K</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="week-sales-container">
+        <p>Vendas por dia da semana</p>
+
+        <div class="week-sales">
+          <div class="sales-days">
+            <div class="best-sales-day">
+              <div>
+                <img
+                  src="src/images/polygon-1.svg"
+                  alt="Triângulo apontando para cima"
+                />
+                <p>Dia com mais vendas</p>
+              </div>
+              <p>quarta-feira</p>
+            </div>
+
+            <div class="worst-sales-day">
+              <div>
+                <img
+                  src="src/images/polygon-2.svg"
+                  alt="Triângulo apontando para baixo"
+                />
+                <p>Dia com menos vendas</p>
+              </div>
+              <p>domingo</p>
+            </div>
+          </div>
+
+          <div class="chart-sales-per-day">
+            <img
+              src="src/images/chart-3.png"
+              alt="Gráfico de vendas por dia da semana"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
