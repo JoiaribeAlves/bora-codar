@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+$bg-main: #0b0911;
+$bg-aside: #130f1e;
+$bg-table: #1c162c;
+$text: #ffffff;
+$primary: #8257e5;
+$primary-hover: #9674e5;
+$secondary: #3c3748;
+$secondary-hover: #6a617f;
+$border: #d9cdf7;
+
+body {
+  font-family: Inter, sans-serif;
+  color: $text;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: auto 400px;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    color: $text;
+    border: 2px solid transparent;
+    border-radius: 999px;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    transition: all 150ms;
+    cursor: pointer;
+
+    &.movable {
+      cursor: move !important;
+    }
+
+    &.loading {
+      cursor: wait !important;
+
+      i {
+        animation: spinner 700ms linear infinite;
+      }
+    }
+
+    &.focus {
+      border-color: $border;
+    }
+
+    &:focus {
+      border-color: $border;
+    }
+
+    &:disabled {
+      opacity: 0.56;
+      cursor: not-allowed !important;
+    }
+
+    &.primary {
+      background-color: $primary;
+
+      &:not(:disabled):hover {
+        background-color: $primary-hover;
+      }
+
+      &.hover {
+        background-color: $primary-hover;
+      }
+    }
+
+    &.secondary {
+      background-color: $secondary;
+
+      &:not(:disabled):hover {
+        background-color: $secondary-hover;
+      }
+
+      &.hover {
+        background-color: $secondary-hover;
+      }
+    }
+
+    &.tertiary {
+      background-color: transparent;
+    }
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem 4.375rem;
+    background-color: $bg-main;
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .description {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      h1 {
+        font-size: 2rem;
+        font-weight: 700;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1.5rem;
+        }
+      }
+
+      p {
+        font-size: 1.2rem;
+
+        @media screen and (max-width: 768px) {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .table {
+      border: 4px solid $bg-table;
+      border-radius: 0.5rem;
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+
+        thead {
+          tr {
+            th {
+              background-color: $bg-table;
+              padding: 1.5rem;
+              font-weight: 400;
+              font-size: 0.6875rem;
+
+              @media screen and (max-width: 768px) {
+                padding: 1rem;
+              }
+            }
+          }
+        }
+
+        tbody {
+          tr {
+            td {
+              background-color: $bg-main;
+              padding: 1rem;
+              text-align: center;
+              font-size: 0.6875rem;
+
+              &:first-child {
+                background-color: $bg-table;
+              }
+
+              button {
+                margin: auto;
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 6rem 4.375rem;
+    background-color: $bg-aside;
+
+    @media screen and (max-width: 768px) {
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    h2 {
+      font-size: 2rem;
+      font-weight: 700;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1.5rem;
+      }
+    }
+
+    p {
+      font-size: 1.2rem;
+
+      @media screen and (max-width: 768px) {
+        font-size: 1rem;
+      }
+    }
+
+    .test-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  }
+}
+
+@keyframes spinner {
+  to {
+    transform: rotateZ(360deg);
+  }
+}

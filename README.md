@@ -11,3 +11,9 @@
 <p align="center">
   <img src="./desafio-2/.github/preview.png" alt="Imagem final do projeto card de produto" width="100%" />
 </p>
+
+# Desafio 03 - Botões e Cusores
+
+<p align="center">
+  <img src="./desafio-3/.github/preview.png" alt="Imagem final do projeto card de produto" width="100%" />
+</p>
