@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Player de música</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="product">
+        <img
+          id="product-image"
+          src="./assets/images/sofa-margot-ii-rose.png"
+          alt="Imagem do Sofá Margot II - Rosé"
+        />
+
+        <button type="button" id="change-image">
+          <img src="./assets/images/vector-360.svg" alt="Símbolo 360 graus" />
+        </button>
+      </div>
+
+      <div class="info-product-container">
+        <div class="info-product">
+          <p class="cod">Código: 12345-6</p>
+          <h1 class="title-product">Sofá Margot II - Rosé</h1>
+          <h2 class="price">R$ 4.000,00</h2>
+        </div>
+        <button type="button" id="add-to-bag">Adicionar à cesta</button>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

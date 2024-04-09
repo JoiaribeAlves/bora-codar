@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #d9cdf7;
+  color: #271a45;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8125rem;
+  min-height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .app {
+    flex-direction: column;
+  }
+}
+.app .product {
+  position: relative;
+  width: 449px;
+  height: 253px;
+}
+.app .product img {
+  width: 100%;
+  height: 100%;
+}
+.app .product button {
+  position: absolute;
+  right: 3rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.app .product button .btn-close {
+  width: 1rem;
+  height: 1rem;
+}
+.app .info-product-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.app .info-product-container .info-product {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.app .info-product-container .info-product p {
+  font-size: 0.625rem;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.app .info-product-container .info-product h1 {
+  font-family: "EB Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.app .info-product-container .info-product h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.app .info-product-container button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+  width: 9.375rem;
+  height: 2rem;
+  background-color: transparent;
+  color: #271a45;
+  border: 1px solid #271a45;
+  border-radius: 999rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition-duration: 150ms;
+}
+.app .info-product-container button:hover {
+  background-color: #271a45;
+  color: #d9cdf7;
+}/*# sourceMappingURL=styles.css.map */

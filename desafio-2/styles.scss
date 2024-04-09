@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+$bg: #d9cdf7;
+$text: #271a45;
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: $bg;
+  color: $text;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8125rem;
+  min-height: 100vh;
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+
+  .product {
+    position: relative;
+    width: 449px;
+    height: 253px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    button {
+      position: absolute;
+      right: 3rem;
+      top: 0;
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+
+      .btn-close {
+        width: 1rem;
+        height: 1rem;
+      }
+    }
+  }
+
+  .info-product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    .info-product {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      p {
+        font-size: 0.625rem;
+        font-weight: 300;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        font-family: "EB Garamond", serif;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+
+      h2 {
+        font-size: 1rem;
+        font-weight: 400;
+        opacity: 0.7;
+      }
+    }
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      align-self: flex-start;
+      width: 9.375rem;
+      height: 2rem;
+      background-color: transparent;
+      color: $text;
+      border: 1px solid $text;
+      border-radius: 999rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition-duration: 150ms;
+
+      &:hover {
+        background-color: $text;
+        color: $bg;
+      }
+    }
+  }
+}
