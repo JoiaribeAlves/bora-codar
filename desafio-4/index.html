@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="profile">
+          <div class="avatar">
+            <img src="./assets/images/profile.jpg" alt="Foto do perfil" />
+          </div>
+
+          <div class="name-status">
+            <h2>Samanta Donato</h2>
+            <span>
+              <i class="ph-fill ph-circle"></i>
+              Online
+            </span>
+          </div>
+        </div>
+
+        <button type="button" title="Fechar conversa">
+          <i class="ph ph-x"></i>
+        </button>
+      </div>
+
+      <div class="chat">
+        <div class="messages">
+          <div class="message">
+            <div class="received">
+              <span>Samanta - 11:30</span>
+              <div>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit.
+              </div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="sent">
+              <span>Você - 11:32</span>
+              <div>Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="received">
+              <span>Samanta - 11:32</span>
+              <div>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit
+              </div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="sent">
+              <span>Você - 11:33</span>
+              <div>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="sent">
+              <span>Você - 11:40</span>
+              <div>Lorem ipsum dolor sit amet</div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="received">
+              <span>Samanta - 11:44</span>
+              <div>
+                Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form id="form">
+          <input
+            type="text"
+            id="my-message"
+            placeholder="Escreva sua mensagem"
+            autocomplete="off"
+          />
+          <button type="submit">
+            <i class="ph-fill ph-paper-plane-right"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>
