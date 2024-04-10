@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  </head>
+  <body>
+    <div class="app">
+      <div class="display">
+        <div class="history">Calculadora Básica</div>
+
+        <div class="result">
+          <span class="icon"><i class="ph ph-equals"></i></span>
+          <span class="value" id="result-calc">0</span>
+        </div>
+      </div>
+
+      <div class="keyboard">
+        <button type="button" class="tertiary" onclick="resetCalc()">CE</button>
+
+        <button type="button" onclick="deleteLastDigit()">C</button>
+
+        <button type="button" class="primary" disabled>
+          <i class="ph ph-percent"></i>
+        </button>
+
+        <button type="button" class="primary" onclick="setValue('/')">
+          <i class="ph ph-divide"></i>
+        </button>
+
+        <button type="button" onclick="setValue(7)">7</button>
+
+        <button type="button" onclick="setValue(8)">8</button>
+
+        <button type="button" onclick="setValue(9)">9</button>
+
+        <button type="button" class="primary" onclick="setValue('*')">
+          <i class="ph ph-x"></i>
+        </button>
+
+        <button type="button" onclick="setValue(4)">4</button>
+
+        <button type="button" onclick="setValue(5)">5</button>
+
+        <button type="button" onclick="setValue(6)">6</button>
+
+        <button type="button" class="primary" onclick="setValue('-')">
+          <i class="ph ph-minus"></i>
+        </button>
+
+        <button type="button" onclick="setValue(1)">1</button>
+
+        <button type="button" onclick="setValue(2)">2</button>
+
+        <button type="button" onclick="setValue(3)">3</button>
+
+        <button type="button" class="primary" onclick="setValue('+')">
+          <i class="ph ph-plus"></i>
+        </button>
+
+        <button type="button" disabled>
+          <i class="ph ph-plus-minus"></i>
+        </button>
+
+        <button type="button" onclick="setValue(0)">0</button>
+
+        <button type="button" onclick="setValue('.')">,</button>
+
+        <button type="button" class="secondary" onclick="calculate()">
+          <i class="ph ph-equals"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./scripts.js"></script>
+  </body>
+</html>

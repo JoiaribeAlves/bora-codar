@@ -23,3 +23,9 @@
 <p align="center">
   <img src="./desafio-4/assets/images/preview.png" alt="Imagem final do projeto card de produto" width="100%" />
 </p>
+
+# Desafio 05 - Calculadora
+
+<p align="center">
+  <img src="./desafio-5/assets/images/preview.png" alt="Imagem final do projeto card de produto" width="100%" />
+</p>
