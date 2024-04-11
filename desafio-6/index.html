@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cartão de embarque</title>
+
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div
+      class="flex justify-center items-center h-[100vh] px-4 bg-gradient-to-b from-[#714bc9] to-[#2d1e4e]"
+    >
+      <div class="flex flex-col gap-4 max-w-[300px]">
+        <h1 class="text-white text-center text-lg font-bold">
+          Cartão de embarque
+        </h1>
+
+        <div class="text-[#1f1f1f]">
+          <!-- Start Card Top -->
+          <div
+            class="bg-white p-6 rounded-2xl border-b border-gray-400 border-dashed"
+          >
+            <div class="mb-6">
+              <div class="flex justify-between">
+                <span class="text-xs opacity-75 leading-3">Voo</span>
+                <span class="text-xs opacity-75 leading-3">Data</span>
+              </div>
+
+              <div class="flex justify-between">
+                <span class="text-sm font-bold">RS254</span>
+                <span class="text-sm font-bold">11/04/2024</span>
+              </div>
+            </div>
+
+            <div>
+              <div class="flex justify-between">
+                <span class="text-xs opacity-75">São Paulo, BRA</span>
+                <span class="text-xs opacity-75">São Francisco, EUA</span>
+              </div>
+
+              <div class="flex justify-between items-center">
+                <span class="text-4xl font-bold">GRU</span>
+                <span class="text-xl font-bold origin-center rotate-90">
+                  <i class="ph-fill ph-airplane"></i>
+                </span>
+                <span class="text-4xl font-bold">SFO</span>
+              </div>
+
+              <div class="flex justify-between">
+                <span class="text-sm">17:00</span>
+                <span class="text-sm">04:48<sup>+1</sup></span>
+              </div>
+            </div>
+          </div>
+          <!-- End Card Top -->
+
+          <!-- Start Card Middle -->
+          <div
+            class="bg-white p-6 rounded-2xl border-b border-gray-400 border-dashed"
+          >
+            <div class="flex justify-between">
+              <span class="text-xs opacity-75 leading-3">Passageiro</span>
+              <span class="text-xs opacity-75 leading-3">Assento</span>
+            </div>
+
+            <div class="flex justify-between">
+              <span class="text-sm font-bold">Joiaribe Guimarães Alves</span>
+              <span class="text-sm font-bold">17B</span>
+            </div>
+          </div>
+          <!-- End Card Middle -->
+
+          <!-- Start Card Bottom -->
+          <div class="flex flex-col gap-4 bg-white p-6 rounded-2xl">
+            <div class="flex gap-4">
+              <div class="flex flex-col gap-3">
+                <div class="flex flex-col gap-1">
+                  <span class="text-xs opacity-75 leading-3">Embarque</span>
+                  <span
+                    class="text-sm text-center text-white font-bold p-1 rounded-md bg-[#714bc9]"
+                  >
+                    16:15
+                  </span>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <span class="text-xs opacity-75 leading-3">Terminal</span>
+                  <span class="text-sm font-bold">2</span>
+                </div>
+
+                <div class="flex flex-col gap-1">
+                  <span class="text-xs opacity-75 leading-3">Portão</span>
+                  <span class="text-sm font-bold">15</span>
+                </div>
+              </div>
+
+              <div class="flex flex-1 flex-col gap-3">
+                <div class="flex-1 flex justify-center" id="qrcode"></div>
+
+                <div class="text-sm text-center opacity-75 w-full">
+                  Grupo de embarque: 3
+                </div>
+              </div>
+            </div>
+
+            <p class="text-center text-sm">
+              <span class="font-bold">Atenção:</span> O portão fecha às 16:45
+            </p>
+          </div>
+          <!-- End Card Bottom -->
+        </div>
+
+        <small class="text-center text-white">
+          *Qualquer problema procure o balcão de atendimento da sua companhia
+          aéria
+        </small>
+      </div>
+    </div>
+
+    <script src="./qrcode.min.js"></script>
+    <script src="./scripts.js"></script>
+  </body>
+</html>
